@@ -9,14 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	});
 
-	// 移动端菜单切换
-	const menuToggle = document.getElementById('menu-toggle');
-	const mobileMenu = document.getElementById('mobile-menu');
-
-	menuToggle.addEventListener('click', function() {
-		mobileMenu.classList.toggle('hidden');
-	});
-
 	// 轮播图功能
 	const slider = document.getElementById('slider');
 	const sliderItems = document.querySelectorAll('.slider-item');
@@ -87,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				// 更新显示
 				stars.forEach((s, i) => {
 					s.classList.remove('fa-star', 'fa-star-half-o',
-					'fa-star-o');
+						'fa-star-o');
 
 					if ((i + 1) * 2 <= rating) {
 						s.classList.add('fa-star');
